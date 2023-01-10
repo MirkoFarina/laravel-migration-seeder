@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('arrival_station', 120);
             $table->time('departure_time');
             $table->time('arrival_time');
-            $table->tinyInteger('trains_code')->unsigned();
+            $table->string('trains_code', 15);
             $table->tinyInteger('number_coaches')->unsigned();
             $table->boolean('is_ontime')->default(1);
             $table->boolean('is_available')->default(1);
